@@ -11,7 +11,4 @@ def detector(x0,y0):
     if extractor==x0:
         print('True')
     else:
-        print('False')        
-
-
-print('r')        
+        print('False')              
