@@ -12,3 +12,6 @@ def detector(x0,y0):
         print('True')
     else:
         print('False')        
+
+
+print('r')        
