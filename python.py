@@ -4,12 +4,12 @@ def christmas_tree(x):
         print(" " * (x - r - 1) + "*" * (2 * r + 1))
       
  ## x0 = "apple", y0 = "adcsjncjsppaxjjnaxle" --> True if all characters of x0 are in y0 in order, y0 = "bsdpple" --> False, y0 = "paple" --> False
-def detector(x0,y0):
-    extractor=''
-    for letter in y0:
-        if letter in x0:extractor+=letter
-    if extractor==x0:
-        print('True')
-    else:
-        print('False')                    
-        
+def is_subsequence(x0, y0):
+    i, j = 0, 0
+    while i < len(x0) and j < len(y0):
+        if x0[i] == y0[j]:
+            i += 1
+        j += 1
+    return i == len(x0)
+a=is_subsequence("apple","adcsjncjsppaxjjnaxle")
+print(a)                          
