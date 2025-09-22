@@ -12,4 +12,6 @@ def is_subsequence(x0, y0):
         j += 1
     return i == len(x0)
 a=is_subsequence("apple","adcsjncjsppaxjjnaxle")
-print(a)                          
+print(a)               
+
+#ddd
