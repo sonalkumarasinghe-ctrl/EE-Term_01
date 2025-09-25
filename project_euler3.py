@@ -2,15 +2,15 @@ from math import*
 def is_prime(num):
     a=True
     for r in range(2,int(sqrt(num)+1)):
-        if num%r==0 or num!=2:
+        if num%r==0 and num!=2:
             return False
     else:
         return a    
 num=int(input("Enter the Val-:"))
-Result=is_prime(num)
-for r in range(num,2,-1):
-    
-    
-
-            
-        
+k = num
+i = 3
+while is_prime(k)==False:
+        if k % i == 0:
+                k //= i
+        i +=2
+print(k)    #Answer is 6857    
