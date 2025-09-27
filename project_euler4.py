@@ -3,10 +3,9 @@ def palindrome(num):
         return True
 vals=[]    
 for r in range(999,99,-1):
-    if palindrome(r**2)==True:
-        vals.append(r**2)
-print(palindrome(1002))         
-        
+    for s in range(r+1,99,-1):
+        if palindrome(r*s)==True:
+            vals.append(r*s)
+print(max(vals))             
 
-    
-    
+# Answer is 906609
