@@ -9,12 +9,13 @@ def is_prime(num):
     else:
         return a  
 prime,i,count=[2],3,1    
-while count<=6:
+while len(prime)<10001:
     if is_prime(i)==True:
         prime.append(i)
-        i+=2
-        count+=1
-print(prime)        
+    i+=2    
+print(prime[-1])     
+
+#Answer is 104743
 
 
 
